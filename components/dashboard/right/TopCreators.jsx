@@ -30,7 +30,7 @@ function TopCreators({darkMode}) {
             <div className=' max-h-[250px] overflow-y-auto px-3 '>
                 {
                     items.map((item, index) => (
-                        <TopCreator item={item} index={index+1} /> 
+                        <TopCreator key={item.name} item={item} index={index+1} /> 
                     ))
                 }
             </div>
