@@ -25,7 +25,7 @@ export default function RecentlyAddedItems() {
         <>
             {
                 items.map((item) => (
-                    <RecentlyAddedItem key={item.name} item={item} />
+                    <RecentlyAddedItem key={item.image} item={item} />
                 ) )   
             }  
         </>

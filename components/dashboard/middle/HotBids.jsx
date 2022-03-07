@@ -64,7 +64,7 @@ function HotBids() {
             <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 max-h-[600px] overflow-y-auto px-2 gap-5'>
                 {
                     items.map((item)=> (
-                        <HotBidItem key={item.name} item={item} />
+                        <HotBidItem key={item.image} item={item} />
                     ))
                 }
             </div>
