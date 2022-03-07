@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <div className={ 'flex font-poppins flex-col-reverse md:flex-row ' + darkMode }>
-        <ToggleMenu toggleMenu={toggleMenu} showMenu={showMenu} />
+        <ToggleMenu toggleMenu={toggleMenu} showMenu={showMenu} key={"Toggle menu"} />
         <LeftPart />
         <MiddlePart />
         <RightPart toggleMenu={toggleMenu} showMenu={showMenu} toggle={toggle}  darkMode={darkMode}/>
