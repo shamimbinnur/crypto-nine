@@ -16,7 +16,7 @@ module.exports = {
 
       },
       backgroundImage: {
-        'cover': "url('../public/images/cover2.jpg')",
+        'cover': "url('/images/cover2.jpg')",
       },
     },
   },
