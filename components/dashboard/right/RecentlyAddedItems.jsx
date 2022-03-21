@@ -6,15 +6,18 @@ export default function RecentlyAddedItems() {
     const items = [
         {
             image: '/images/photo1.jpg',
-            name: 'Thunder Home'
+            name: 'Thunder Home',
+            id: 1,
         },
         {
             image: '/images/photo2.jpg',
-            name: 'Kids Playground '
+            name: 'Kids Playground ',
+            id: 2,
         },
         {
             image: '/images/photo3.jpg',
-            name: 'Beauty of nature '
+            name: 'Beauty of nature ',
+            id: 3
         },
 
 
@@ -25,7 +28,7 @@ export default function RecentlyAddedItems() {
         <>
             {
                 items.map((item) => (
-                    <RecentlyAddedItem key={item.image} item={item} />
+                    <RecentlyAddedItem key={item.id} item={item} />
                 ) )   
             }  
         </>
