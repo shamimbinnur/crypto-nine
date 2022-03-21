@@ -6,39 +6,48 @@ function HotBids() {
     const items = [
         {
             image: '/images/photo1.jpg',
-            name: 'Thunder Home'
+            name: 'Thunder Home',
+            id: 1
         },
         {
             image: '/images/photo2.jpg',
-            name: 'Kids Playground '
+            name: 'Kids Playground ',
+            id: 2
         },
         {
             image: '/images/photo3.jpg',
-            name: 'Beauty of nature '
+            name: 'Beauty of nature ',
+            id: 3
         },
         {
             image: '/images/photo2.jpg',
-            name: 'Kids Playground '
+            name: 'Kids Playground ',
+            id: 4
         },
         {
             image: '/images/photo1.jpg',
-            name: 'Thunder Home'
+            name: 'Thunder Home',
+            id: 5
         },
         {
             image: '/images/photo3.jpg',
-            name: 'Beauty of nature '
+            name: 'Beauty of nature ',
+            id: 6
         },
         {
             image: '/images/photo2.jpg',
-            name: 'Kids Playground '
+            name: 'Kids Playground ',
+            id: 7
         },
         {
             image: '/images/photo1.jpg',
-            name: 'Thunder Home'
+            name: 'Thunder Home',
+            id: 8
         },
         {
             image: '/images/photo3.jpg',
-            name: 'Beauty of nature '
+            name: 'Beauty of nature ',
+            id: 9
         },
 
 
@@ -64,7 +73,7 @@ function HotBids() {
             <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 max-h-[600px] overflow-y-auto px-2 gap-5'>
                 {
                     items.map((item)=> (
-                        <HotBidItem key={item.image} item={item} />
+                        <HotBidItem key={item.id} item={item} />
                     ))
                 }
             </div>

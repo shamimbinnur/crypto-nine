@@ -6,6 +6,7 @@ import TopCreators from './TopCreators'
 import ToggleMenu from './ToggleMenu'
 
 function RightPart({darkMode, toggle, toggleMenu, showMenu}) {
+
     return (
             <div className='bg-slate-100 dark:bg-gray-700  flex flex-col p-4 min-h-screen'>
 

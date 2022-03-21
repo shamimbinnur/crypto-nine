@@ -11,7 +11,6 @@ export default function Home() {
   
   const toggle = ()=> {
       darkMode == '' ? setdarkMode('dark') : setdarkMode('');
-      console.log(showMenu)
   }
   const [showMenu, setShowMenu] = useState('hidden')
   
@@ -19,20 +18,16 @@ export default function Home() {
       showMenu == 'hidden' ? setShowMenu('block') : setShowMenu('hidden') 
       
   }
-  useEffect(() => {
 
-    
-  
-  }, [])
   
 
 
   return (
-    <div  className={ 'flex font-poppins flex-col-reverse md:flex-row ' + darkMode }>
-        <ToggleMenu key={"hola"} toggleMenu={toggleMenu} showMenu={showMenu}  />
-        <LeftPart key={"hola2"} />
-        <MiddlePart key={"hola3"}  />
-        <RightPart key={"hola4"} toggleMenu={toggleMenu} showMenu={showMenu} toggle={toggle}  darkMode={darkMode}/>
+    <div  className={ 'flex font-poppins flex-col-reverse md:flex-row '+darkMode}>
+        <ToggleMenu toggleMenu={toggleMenu} showMenu={showMenu}  />
+        <LeftPart  />
+        <MiddlePart   />
+        <RightPart  toggleMenu={toggleMenu} showMenu={showMenu} toggle={toggle}  darkMode={darkMode}/>
       </div>
   )
 }

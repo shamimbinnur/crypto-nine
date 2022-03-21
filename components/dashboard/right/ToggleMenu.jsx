@@ -5,7 +5,6 @@ import React from 'react'
 
 function ToggleMenu({showMenu, toggleMenu}) {
 
-    console.log(showMenu)
 
     return (
         <div className={'bg-white dark:bg-gray-900 min-w-full py-5 min-h-screen absolute z-[1000] top-0 transition-all ' + showMenu   }>

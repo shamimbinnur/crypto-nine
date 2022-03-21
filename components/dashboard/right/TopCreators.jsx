@@ -6,19 +6,23 @@ function TopCreators({darkMode}) {
     const items = [
         {
             image: '/images/photo1.jpg',
-            name: 'Thunder Home'
+            name: 'Thunder Home',
+            id: 1
         },
         {
             image: '/images/profile2.jpg',
-            name: 'Kids Playground '
+            name: 'Kids Playground ',
+            id: 2
         },
         {
             image: '/images/profile3.jpg',
-            name: 'Beauty of nature '
+            name: 'Beauty of nature ',
+            id: 3
         },
         {
             image: '/images/profile2.jpg',
-            name: 'Kids Playground '
+            name: 'Kids Playground ',
+            id: 4
         },
 
 
@@ -30,7 +34,7 @@ function TopCreators({darkMode}) {
             <div className=' max-h-[250px] overflow-y-auto px-3 '>
                 {
                     items.map((item, index) => (
-                        <TopCreator key={item.image} item={item} index={index+1} /> 
+                        <TopCreator key={item.id} item={item} index={index+1} /> 
                     ))
                 }
             </div>
